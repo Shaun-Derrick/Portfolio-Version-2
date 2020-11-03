@@ -1,0 +1,54 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="indexHome.css">
+        <title>Professional Portfolio of Shaun Derrick</title>
+    </head>
+    <body onload="typeWr()">
+        <div class = "containerHome">
+            <!--main page-title fades in and out. Misssion Impossible for the rest-->
+            <div style="margin-bottom: 0;">
+                <audio autoplay>
+                    <source src="/audio/Typewriter.wav">
+                </audio>
+            <div class="fade-in boxTitle">
+                <h1>EXPEDITION SD</h1>
+            </div>
+            <div class="boxType">
+                <strong>
+                <p id="demo"></p>
+                    <script>
+                        let i = "";
+                        let txt = 'MISSION: Sustained Release of Limitless Potential';
+                        let speed = 150;
+                        
+                        function typeWr() {
+                            if (i < txt.length) {
+                            document.getElementById("demo").innerHTML += txt.charAt(i);
+                            i++;
+                            setTimeout(typeWr, speed);
+                            }
+                        }
+                    </script>
+                </strong>
+            </div>
+            <div class="fade-in boxIntro">
+                <main>
+                    <div>Professional Portfolio of: SHAUN DERRICK</div>
+                </main>
+            </div>
+            </div>
+            <!--Navigation timeline selection opens new page-hovering over gives description-->
+            <div class= "boxNav">
+                <nav class= "fade-in">
+                    <ul class="nav_links">
+                        <li><a href=index.html style= "color:limegreen">HOME</a></li>
+                        <li><a href=education.html style="color: limegreen;">STAGE 1</br>GENESIS</br>REV 100.0</a></li>
+                        <li><a href=work.html style="color: limegreen;">STAGE 2</br>EVOLUTION</br>REV 100.1</a></li>
+                        <li><a href=growth.html style="color: limegreen;">STAGE 3</br>METAMORPHOSIS</br>REV 100.∞</a></li>
+                        <li><a href=contact.html style="color: limegreen;">STAGE 4</br>CONTACT</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </body>
+</html>
